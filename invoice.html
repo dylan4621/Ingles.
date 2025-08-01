@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Invoice</title>
+  <!-- Usamos quincenal.css + estilos específicos para los colores dados -->
+  <link rel="stylesheet" href="quincenal.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f9;
+      color: #2c3e50;
+      padding: 30px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 40px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      background-color: white;
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    }
+
+    table th,
+    table td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+
+    table th {
+      background-color: #a3d9a5;
+      color: #2c3e50;
+      text-transform: uppercase;
+    }
+
+    /* Si quieres usar un “Volver” al panel */
+    .back {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .back a {
+      text-decoration: none;
+      color: #2c3e50;
+      background-color: #a3d9a5;
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: 2px solid #2c3e50;
+    }
+
+    .back a:hover {
+      background-color: #8bcf90;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Invoice</h1>
+
+    <p>Lindsay Drugstore &amp; Co.</p>
+    <p>123 Main Street, City, Country</p>
+    <p>Tel: +1 (555) 123-4567</p>
+    <p>Invoice #: 000123</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Descripción</th>
+          <th>Precio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Installation of Financial Software</td>
+          <td>$1,500.00</td>
+        </tr>
+        <tr>
+          <td>Monthly Maintenance Fee</td>
+          <td>$300.00</td>
+        </tr>
+        <tr>
+          <td>User Training Session</td>
+          <td>$200.00</td>
+        </tr>
+        <tr>
+          <td>Technical Support Service</td>
+          <td>$150.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Total: $2,150.00</h2>
+
+    <!-- Opcional: botón para regresar al panel -->
+    <div class="back">
+      <a href="indice.html">Volver al Panel</a>
+    </div>
+  </div>
+</body>
+</html>
